@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e0737 0%, #6293e6 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.container {
+    width: 100%;
+    max-width: 500px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+h2{
+    color: white;
+}
+.header {
+    background: linear-gradient(to right, #0f0328, #ae83d4);
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+.header h1 {
+    color: #f9f9f9;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.header p {
+    opacity: 0.9;
+    font-size: 16px;
+}
+
+.form-container {
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #090808;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #6a11cb;
+    box-shadow: 0 0 0 2px rgba(106, 17, 203, 0.2);
+}
+
+.gender-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+}
+
+.gender-option {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    background-color: #f9f9f9;
+}
+
+.gender-option:hover {
+    background-color: #f0f0f0;
+}
+
+.gender-option.selected {
+    border-color: #6a11cb;
+    background-color: rgba(106, 17, 203, 0.1);
+}
+
+.gender-option input {
+    display: none;
+}
+
+.gender-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 0;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to right, #4a00e0, #8e2de2);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+@media (max-width: 480px) {
+    .container {
+        border-radius: 10px;
+    }
+
+    .header {
+        padding: 20px;
+    }
+
+    .form-container {
+        padding: 20px;
+    }
+
+    .gender-group {
+        flex-direction: column;
+    }
+}
